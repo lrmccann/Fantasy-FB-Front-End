@@ -1,0 +1,44 @@
+.mainContainer{
+    height: 100%;
+    width: 100%;
+    background-color: lawngreen;
+}
+
+.header{
+    height: 8%;
+    width: 100%;
+    background-color: lightcoral;
+}
+
+.signupBtn{
+float: right;
+margin-right: 1%;
+margin-top: .45%;
+border-radius: 50px;
+height: 75%;
+width: 10%;
+background-color: whitesmoke;
+/* border: solid black .25%; */
+border: none;
+outline: none;
+}
+
+.signupText{   
+padding: 7;
+}
+
+.loginBtn{
+float: right;
+margin-right: .50%;
+margin-top: .45%;
+border-radius: 50px;
+height: 75%;
+width: 10%;
+border: none;
+outline: none;
+background-color: whitesmoke;
+}
+
+.loginText{
+padding: 7;
+}

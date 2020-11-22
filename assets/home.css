@@ -1,0 +1,202 @@
+*:focus {outline: none !important;}
+
+.container-fluid.mainCont{
+    height: 100%;
+    width: 100%;
+    /* border: solid black 1px; */
+    contain: content;
+    /* margin-top: 10; */
+    /* display: flex; */
+    /* background-color: #82878C; */
+    background-color: transparent;
+    overflow-x: scroll;
+    overflow-y: none;
+    scroll-behavior: auto;
+    /* scrollbar-width: none; */
+    background-image: 
+    url("../images/background-image-2.jpg");
+    background-size: cover;
+}
+
+.navBar{
+    display: flex;
+    height: 8%;
+    width: 102%;
+    margin-top: .10%;
+    right: 1%;
+    /* background-color: whitesmoke; */
+    flex-direction: row-reverse;
+}
+
+/* .headerCont{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 24%;
+    width: 100%;
+    background-color: bisque;
+    margin-top: 1%;
+    background-position: center;
+} */
+
+.dropleft{
+    float: right;
+    flex-direction: row-reverse;
+}
+
+.btn.hamBtn {
+    height: 50;
+    width: 50;
+    /* font-size: x-large; */
+    /* margin-top: 18%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    outline: none;
+    /* background-attachment: scroll; */
+    background-image: 
+    url("../images/b-ball-for-menu-button.png");
+    /* background-image: */
+    /* url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=FFFFFF'); */
+    }
+.dropdown-menu{
+    height: 90%;
+    background-color: none;
+}
+
+.dropdown-list{
+    list-style: unset;
+    width: 1350px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    background-color: slategray ;
+}
+
+.dropdown-text{
+    background-color: slategray;
+    font-size: 18;
+    height: 15%;
+    outline: none;
+    border: none;
+}
+
+.leagueMatchesContContainer{
+    display: flex;
+    align-content: center;
+    overflow-y: scroll;
+    overflow-x: none;
+    flex-direction: row;
+}
+
+.rankAndCurrentlyPlayingCont{
+    display: flex;
+    /* flex-direction: row; */
+    flex-direction: column;
+    width: 97.5%;
+    height: 100%;
+    /* background-color: indianred; */
+    position: absolute;
+    margin-top: 6%;
+    justify-content: space-between;
+}
+
+.rankingsText{
+    position: absolute;
+    color: whitesmoke;
+    padding-left: 1.50%;
+    padding-top: .40%;
+    font-size: 35px;
+}
+
+.rankCont{
+    height: 100%;
+    width: 49%;
+    /* background-color: rgb(107, 107, 107); */
+    background-color: #4d1927 ;
+    border-radius: 25px;
+    margin-bottom: 2.5%;
+}
+
+.line{
+    margin-left: 1%;
+    /* border: solid #4d1927 1px; */
+    border: solid whitesmoke 1px;
+    position: absolute;
+    width: 46.5%;
+    top: 58;
+}
+
+.currentlyPlayingText{
+    position: absolute;
+    color: whitesmoke;
+    padding-left: 1.50%;
+    /* padding-top: .40%; */
+    font-size: 35px;
+    /* margin-left: 51%; */
+    /* margin-top: .40%; */
+    top: 385;
+}
+
+.currentlyPlayingCont{
+    height: 100%;
+    width: 49%;
+    background-color: #153e5e;
+    border-radius: 25px;
+}
+
+.lineTwo{
+    margin-left: 1.12%;
+    /* margin-left: 52.25%; */
+    top: 437;
+    /* border: solid #4d1927 1px; */
+    border: solid whitesmoke 1px;
+    position: absolute;
+    width: 46.5%;
+    /* top: 57; */
+}
+
+.matchUpText{
+    font-size: 40px;
+    position: absolute;
+    color: whitesmoke;
+    right: 640;
+    bottom: -280;
+    z-index: 900;
+}
+
+.liveGamesCont{
+    height: 100%;
+    width: 40%;
+    background-color: whitesmoke;
+    position: absolute;
+    left: 800;
+    border-radius: 25px;
+}
+
+.leagueMatchesCont{
+    height: 50%;
+    width: 97.8%;
+    background: rgb(21,62,94);
+    background: radial-gradient(circle, rgba(21,62,94,1) 42%, rgba(77,25,39,1) 93%);
+    position: absolute;
+    margin-top: 60%;
+    margin-bottom: 10%;
+    border-radius: 25px;
+}
+
+
+
+/* .navBar {
+    height: 7%;
+    width: 100%;
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.navText{
+    font-size: medium;
+} */

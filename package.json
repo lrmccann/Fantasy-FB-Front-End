@@ -1,0 +1,21 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "testing-out-js-skill",
+  "main": "home.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lrmccann",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "@popperjs/core": "^2.5.4",
+    "axios": "^0.21.0",
+    "bootstrap": "^4.5.3",
+    "cors": "^2.8.5",
+    "firebase": "^8.1.1",
+    "jquery": "^3.5.1",
+    "nodemon": "^2.0.6"
+  }
+}
