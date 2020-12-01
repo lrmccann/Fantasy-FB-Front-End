@@ -1,0 +1,240 @@
+.playersPage{
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-image: 
+    url("../images/background-image-2.jpg");
+    background-size: cover;
+}
+
+.navBar{
+    display: flex;
+    height: 8%;
+    width: 102%;
+    margin-top: .10%;
+    right: 1%;
+    margin-bottom: 3%;
+    /* background-color: whitesmoke; */
+    flex-direction: row-reverse;
+}
+
+.dropleft{
+    float: right;
+    flex-direction: row-reverse;
+}
+
+.btn.hamBtn {
+    height: 50;
+    width: 50;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    outline: none;
+    background-image: 
+    url("../images/b-ball-for-menu-button.png");
+    }
+
+.dropdown-menu{
+    height: 90%;
+    background-color: none;
+}
+
+.dropdown-list{
+    list-style: unset;
+    width: 1350px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    background-color: slategray ;
+}
+
+
+.dropdown-text{
+    background-color: slategray;
+    font-size: 18;
+    height: 15%;
+    outline: none;
+    border: none;
+}
+
+/* .menuHeader{
+    height: 6%;
+    width: 90%;
+    background-color: springgreen;
+    margin: auto;
+} */
+
+.playersCont{
+    height: 80%;
+    width: 100%;
+    background-color: royalblue;
+    z-index: 1;
+    margin: auto;
+    position: relative;
+    border: solid black 1.25px;
+}
+
+.searchCont{
+    height: 10%;
+    width: 100%;
+    background-color: silver;
+    display: flex;
+    z-index: 100;
+}
+.searchBar{
+    height: 50%;
+    width: 100%;
+}
+.searchInput{
+font-size: 18px;
+width: 80%;
+margin-left: 1%;
+margin-top: 1%;
+}
+
+.moreButtons{
+    height: 100%;
+    width: 58%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1%;
+    padding-top: .25%;
+    margin-right: 1%;
+}
+.watchlistCont{
+display: flex;
+flex-direction: column;
+}
+.watchlistBtn{
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+}
+.compPlatersCont{
+    display: flex;
+    flex-direction: column;
+}
+.compPlatersBtn{
+    height: 65%;
+    width: 80%;
+    border-radius: 40px;
+}
+.nflNewsCont{
+    display: flex;
+    flex-direction: column;
+}
+.nflNewsBtn{
+    height: 65%;
+    width: 100%;
+    border-radius: 40px;
+}
+.fantasyNewsCont{
+    display: flex;
+    flex-direction: column;
+}
+.fantasyNewsBtn{
+    height: 65%;
+    width: 80%;
+    border-radius: 40px;
+}
+
+.statsBar{
+    height: 6%;
+    width: 100%;
+    background-color: whitesmoke;
+    position: absolute;
+    margin-top: 4.0001%;
+    border: solid black 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.rank{
+    display: flex;
+    flex-direction: column;
+}
+
+.points{
+    display: flex;
+    flex-direction: column;
+}
+
+.position{
+    display: flex;
+    flex-direction: column;
+}
+
+.rostered{
+    display: flex;
+    flex-direction: column;
+}
+
+.playersHolder{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: whitesmoke;
+    margin-top: 6.35%;
+    margin-bottom: 5%;
+    border: solid black 2px;
+    overflow: scroll;
+}
+
+.players{
+    height: 7.5%;
+    width: 100%;
+    /* background-color: gray; */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    z-index: 2;
+    /* justify-content: space-evenly; */
+}
+
+.newClass{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1%;
+    width: 100%;
+    justify-content: space-between;
+    background-color: silver;
+}
+
+.playerImg{
+    background-color: gray;
+    border-radius: 50px;
+    border: solid black 1px;
+    height: 45px;
+    width: 45px;
+
+}
+
+.playerNameText{
+padding-top: 1%;
+/* background-color: blue; */
+}
+
+.avgDraftPosText{
+    padding-top: 1%;
+    /* background-color: red; */
+}
+
+.byeWeekText{
+    padding-top: 1%;
+    /* background-color: brown; */
+}
+
+.positionText{
+    padding-top: 1%;
+    /* background-color: chartreuse; */
+}
+
+.teamText{
+    padding-top: 1%;
+    /* background-color: yellow; */
+}

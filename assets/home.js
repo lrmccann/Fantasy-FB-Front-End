@@ -6,39 +6,51 @@ let homeBtn = document.getElementById('homeBtn');
 
 const players = []
 
-
-// $('#idkidk').on('click' , function(){
-    const getPlayers = () => {
-    // axios.default.get('https://fantasyapp-4012.herokuapp.com/routes/hello')
+    const getPlayers = async () => {
     axios.get('https://fantasyapp-4012.herokuapp.com/routes/hello')
     .then(function(res) {
-        // console.log(res.data)
         players.push(res.data)
-        
+        if(players === undefined){
+            getPlayers();
+        }else{
+            // console.log(players)
+            return players 
+        }
     })
-    if(players === undefined){
-        getPlayers();
-    }else{
-        // appendToLeagueMatchUpDiv()
-        console.log(players)
-    }
 }
 getPlayers()
 
-// const appendToLeagueMatchUpDiv = () => {
-//     for(i = 0; i < players.length; i++){
-//     $('#leagueMatchesCont').append(`<div class="leagueMatchUpCont"><a href=${players[i]} `)
-//     console.log(players[i] , "players for i")
-//     }
-
-// }
+const fetchSeasons = async () => {
+ axios.get("https://fantasyapp-4012.herokuapp.com/routes/seasons", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-key": "800dedb80dmsh5623edb79c19968p10818fjsnd60acfd537d3",
+		"x-rapidapi-host": "https://www.thesportsdb.com/api.php"
+	}
+})
+.then(async response => {
+    // console.log(response.json());
+    console.log(response)
+    return await response
+})
+.catch(err => {
+	console.error(err);
+});
+}
+fetchSeasons()
 
 const appendToLeagueMatchUpDiv = () =>{
-    players.map((index , myKey) =>{
-        myKey = index.userName
-        return `<div class="leagueMatchUpCont"> <a href=${index.userName} /> `
-    })
+    setTimeout(() => {
+        players[0].map((index , myKey) => {
+            myKey = index.userName
+            console.log(index.userData , "i am index")
+            // return `<div class="leagueMatchUpCont"> <a href=${index.userData.userName} /> </div> `
+            $('.leagueUsersMapped').append(`<div class="leagueMatchUpCont"> <p class="leagueUsersText">${index.userData.userName} </p> </div> `)
+        })
+    } , 3 * 50)
 }
+appendToLeagueMatchUpDiv()
+
 
 $('#hamBtn').on('click' , function(event){
         event.preventDefault();
@@ -67,4 +79,5 @@ $('#hamBtn').on('click' , function(event){
         
 //     }
 // }
+
 });

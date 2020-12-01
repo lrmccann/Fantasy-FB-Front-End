@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Players</title>
+    <link rel="stylesheet" type="text/css" href="../assets/players.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+
+<body>
+    
+    <div class="playersPage">
+        <div class="navBar">
+            <!-- Default dropright button -->
+            <div class="btn-group dropleft" >
+                <button type="button" id="hamBtn" class="btn hamBtn btn-md" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                </button>
+                <!-- Dropdown menu links -->
+                <div id="dropdown-menu" class="dropdown-menu">
+                    <ul class="dropdown-list">
+                        <button id="homeBtn" class="dropdown-text"><a href="./home.html" style="color: black;">Home</a></button>
+                        <button id="teamBtn" class="dropdown-text"><a href="./myTeam.html" style="color: black;">My Team</a></button>
+                        <button id="playersBtn" class="dropdown-text"><a href="./players.html" style="color: black;">Players</a></button>
+                        <button id="signOutBtn" class="dropdown-text"><a href="./login.html" style="color: black;">Sign Out</a></button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="menuHeader">
+
+        </div> -->
+        <div class="playersCont">
+            <div class="searchCont">
+                <form class="searchBar">
+                    <input class="searchInput"
+                    placeholder="Search Players, Teams, Stats"
+                    >
+                </form>
+                <div class="moreButtons">
+                    <div class="watchlistCont">
+                        <button class="watchlistBtn"><i class="far fa-star"></i></button>
+                        <p style="font-size: 10px;">Watchlist</p>
+                    </div>
+                    <div class="compPlayersCont">
+                        <button class="compPlatersBtn"><i class="fas fa-people-arrows"></i></button>
+                        <p style="font-size: 10px;">Compare Players</p>
+                    </div>
+                    <div class="nflNewsCont">
+                        <button class="nflNewsBtn"><i class="fas fa-newspaper"></i></button>
+                        <p style="font-size: 10px;">NFL News</p>
+                    </div>
+                    <div class="fantasyNewsCont">
+                        <button class="fantasyNewsBtn"><i class="far fa-newspaper"></i></button>
+                        <p style="font-size: 10px;">Fantasy News</p>
+                    </div>
+
+                </div>
+                <div class="statsBar">
+                    <h6 class="rank">Avg Draft Pos.</h6>
+                    <h6 class="points">Proj Points</h6>
+                    <h6 class="position">Position</h6>
+                    <h6 class="rostered">%Rostered</h6>
+                </div>
+                <div class="playersHolder" id="playersHolder">
+                <div class="players" id="players">
+                    <!-- <p class="playerName" id="playerName"></p>
+                    <p class="avgDraftPos" id="avgDraftPos"></p>
+                    <p class="byeWeek" id="byeWeek"></p>
+                    <p class="position" id="position"></p>
+                    <p class="team" id="team"></p> -->
+
+
+                </div>
+<!-- <img src="" class=""> -->
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous">
+        </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../assets/players.js"></script>
+</body>
+
+</html>
