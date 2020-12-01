@@ -1,83 +1,98 @@
 $(function () {
 
-let dropDownButton = document.getElementById('hamBtn');
-let homeBtn = document.getElementById('homeBtn');
+    let dropDownButton = document.getElementById('hamBtn');
+    let homeBtn = document.getElementById('homeBtn');
 
 
-const players = []
+    const leagueMembers = []
 
-    const getPlayers = async () => {
-    axios.get('https://fantasyapp-4012.herokuapp.com/routes/hello')
-    .then(function(res) {
-        players.push(res.data)
-        if(players === undefined){
-            getPlayers();
-        }else{
-            // console.log(players)
-            return players 
-        }
-    })
-}
-getPlayers()
+    const getLeagueMembers = async () => {
+        axios.get('https://fantasyapp-4012.herokuapp.com/routes/hello')
+            .then(function (res) {
+                leagueMembers.push(res.data)
+                // if(leagueMembers === undefined){
+                //     getPlayers();
+                // }else{
+                //     // console.log(leagueMembers)
+                //     return leagueMembers 
+                // }
+                return leagueMembers
+            })
+    }
+    getLeagueMembers()
 
-const fetchSeasons = async () => {
- axios.get("https://fantasyapp-4012.herokuapp.com/routes/seasons", {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-key": "800dedb80dmsh5623edb79c19968p10818fjsnd60acfd537d3",
-		"x-rapidapi-host": "https://www.thesportsdb.com/api.php"
-	}
-})
-.then(async response => {
-    // console.log(response.json());
-    console.log(response)
-    return await response
-})
-.catch(err => {
-	console.error(err);
-});
-}
-fetchSeasons()
+    const setWeeklyRankings = async () => {
+        console.log(leagueMembers[0])
+    }
+    setWeeklyRankings()
 
-const appendToLeagueMatchUpDiv = () =>{
-    setTimeout(() => {
-        players[0].map((index , myKey) => {
-            myKey = index.userName
-            console.log(index.userData , "i am index")
-            // return `<div class="leagueMatchUpCont"> <a href=${index.userData.userName} /> </div> `
-            $('.leagueUsersMapped').append(`<div class="leagueMatchUpCont"> <p class="leagueUsersText">${index.userData.userName} </p> </div> `)
+    const fetchWeeklyGames = async () => {
+        await axios.get("https://fantasyapp-4012.herokuapp.com/routes/gamesByWeek", {
+            "method": "GET"
         })
-    } , 3 * 50)
-}
-appendToLeagueMatchUpDiv()
+            .then(async response => {
+                const storeArray = response.data
+                const finalArray = storeArray.slice(200, 295)
+                finalArray.forEach(item => {
+                    // console.log(item)
+                    var today = new Date();
+                    var date = today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate() + "T" + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+                    var finalizedDate = date.toString()
+                    // console.log(date)
+                    // console.log(item.Date)
+                        if(finalizedDate < item.Date){
+                        var getDiv = document.getElementById('liveGamesCont');
+                        var newDiv = document.createElement('div');
+                        var dayOfGame = item.DateTime.slice(0 , 9)
+                        var timeOfGame = item.DateTime.slice(12 , 16)
+                        var divToAppend = `<div class="gamesDiv"><p class="gamesDivText">${item.AwayTeam} @ </p>
+                                            <p class="gamesDivText">${item.HomeTeam} </p><p class="gamesDivText"> Date: ${dayOfGame}</p>
+                                            <p class="gamesDivText"> Time: ${timeOfGame}</p></div>`
+                        newDiv.innerHTML = divToAppend
+                        getDiv.appendChild(newDiv)
+                    }
+                    else{
+                        var getDivAgain = document.getElementById('liveGamesCont');
+                        var anotherNewDiv = document.createElement('div')
+                        var anotherDivToAppend = `<div class="noGamesText"><h2>No games currently scheduled</h2>`
+                        anotherNewDiv.innerHTML = anotherDivToAppend
+                        getDivAgain.appendChild(anotherNewDiv)
+                    }
+
+                })
+            })
+    }
+    fetchWeeklyGames() 
 
 
-$('#hamBtn').on('click' , function(event){
+    const appendToLeagueMatchUpDiv = () => {
+        setTimeout(() => {
+            leagueMembers[0].forEach(item => {
+                // divs for jquery
+                var getDiv = document.getElementById('leagueMatchesCont')
+                var newDiv = document.createElement('div')
+                var appendToDiv = `<div class="leagueUsersMapped">
+                                <h3 class="leagueUsersText">${item.userData.teamName}</h3></div>`
+                newDiv.innerHTML = appendToDiv
+                getDiv.appendChild(newDiv)
+            })
+        }, 3 * 50)
+    }
+    appendToLeagueMatchUpDiv()
+
+
+    $('#hamBtn').on('click', function (event) {
         event.preventDefault();
         // let isToggled = false;
-        $('#dropdown-menu').css('float','none');
+        $('#dropdown-menu').css('float', 'none');
         console.log("hello")
-        if(isToggled = false){
+        if (isToggled = false) {
             $('#dropdown-menu').hide()
         }
-        else if(isToggled = true){
+        else if (isToggled = true) {
             $('#dropdwon-menu').show()
         }
     })
-    homeBtn.click('click' , function(){
+    homeBtn.click('click', function () {
     })
-
-
-// const showDropdown = () => {
-//     if(isToggled === true) {
-//         $('hamBtn').hide()
-//         // dropDownButton.remove()
-//         isToggled === false
-//     }
-//     else if(isToggled === false) {
-//         $('hamBtn').show()
-        
-//     }
-// }
-
 });
