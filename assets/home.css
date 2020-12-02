@@ -13,8 +13,9 @@
     overflow-y: none;
     scroll-behavior: auto;
     /* scrollbar-width: none; */
-    background-image: 
-    url("../images/background-image-2.jpg");
+    background-image: url("../images/background1.jpg");
+    /* background-image: 
+    url("../images/background-image-2.jpg"); */
     background-size: cover;
 }
 
@@ -23,30 +24,23 @@
     height: 8%;
     width: 102%;
     margin-top: .10%;
-    right: 1%;
+    /* right: 1%; */
     /* background-color: whitesmoke; */
     flex-direction: row-reverse;
 }
 
-/* .headerCont{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    height: 24%;
-    width: 100%;
-    background-color: bisque;
-    margin-top: 1%;
-    background-position: center;
-} */
 
 .dropleft{
     float: right;
     flex-direction: row-reverse;
+    border: hidden;
+    outline: hidden;
 }
 
+
 .btn.hamBtn {
-    height: 50;
-    width: 50;
+    height: 55;
+    width: 87;
     /* font-size: x-large; */
     /* margin-top: 18%; */
     background-repeat: no-repeat;
@@ -54,20 +48,21 @@
     border: none;
     outline: none;
     /* background-attachment: scroll; */
-    background-image: 
-    url("../images/b-ball-for-menu-button.png");
-    /* background-image: */
-    /* url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=FFFFFF'); */
+    background-image: url("../images/football-for-menu.png");
+    /* background-image: 
+    url("../images/b-ball-for-menu-button.png"); */
     }
 
 .dropdown-menu{
     height: 90%;
-    background-color: none;
 }
+#dropdown-menu{
+    background-color: slategrey;
+    }
 
 .dropdown-list{
     list-style: unset;
-    width: 1350px;
+    width: 1330px;
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
@@ -76,9 +71,11 @@
 
 
 .dropdown-text{
+    margin-top: .1%;
+    /* background-color: whitesmoke; */
     background-color: slategray;
     font-size: 18;
-    height: 15%;
+    height: 100%;
     outline: none;
     border: none;
 }
@@ -120,7 +117,7 @@
 }
 
 .rankingsText{
-    position: absolute;
+    position: relative;
     color: whitesmoke;
     padding-left: 1.50%;
     padding-top: .40%;
@@ -134,19 +131,44 @@
     background-color: #4d1927 ;
     border-radius: 25px;
     margin-bottom: 2.5%;
+    overflow: scroll;
+}
+
+.rankMedal{
+    margin-top: 1.25%;
+    height: 70%;
+    width: 8%;
+}
+.rankMedalNone{
+    color: whitesmoke;
+}
+
+.rankDiv{
+    height: 15%;
+    width: 98%;
+    margin-left: 1%;
+    border-radius: 10px;
+    background-color: #153e5e;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+    justify-content: space-evenly;
+}
+
+.rankText{
+    font-size: 16px;
+    color: whitesmoke;
 }
 
 .line{
     margin-left: 1%;
-    /* border: solid #4d1927 1px; */
+    width: 96%;
     border: solid whitesmoke 1px;
-    position: absolute;
-    width: 46.5%;
-    top: 58;
+    margin-bottom: 3%;
 }
 
 .currentlyPlayingText{
-    position: absolute;
+    /* position: absolute; */
     color: whitesmoke;
     padding-left: 1.50%;
     /* padding-top: .40%; */
@@ -164,23 +186,21 @@
 }
 
 .lineTwo{
-    margin-left: 1.12%;
+    margin-left: 1%;
+    width: 96% ;
     /* margin-left: 52.25%; */
-    top: 437;
+    /* top: 437; */
     /* border: solid #4d1927 1px; */
     border: solid whitesmoke 1px;
-    position: absolute;
-    width: 46.5%;
+    /* position: absolute; */
+    /* width: 46.5%; */
     /* top: 57; */
 }
 
 .matchUpText{
+    text-align: center;
     font-size: 40px;
-    position: absolute;
     color: whitesmoke;
-    right: 640;
-    bottom: -280;
-    z-index: 900;
 }
 
 .liveGamesCont{
@@ -230,7 +250,7 @@
 } */
 
 .leagueMatchesCont{
-    height: 50%;
+    height: 60%;
     width: 97.8%;
     background: rgb(21,62,94);
     background: radial-gradient(circle, rgba(21,62,94,1) 42%, rgba(77,25,39,1) 93%);
@@ -238,13 +258,15 @@
     margin-top: 60%;
     margin-bottom: 10%;
     border-radius: 25px;
-    padding: 5%;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-left: 1%;
     overflow: scroll;
 }
 
 /* from jquery */
 .leagueUsersMapped{
-    height: 35%;
+    height: 18%;
     width: 100%;
     position: relative;
     display: flex;
@@ -253,11 +275,11 @@
     background-color: whitesmoke;
     text-align: left;
     margin-bottom: 2%;
-    border: solid gray 3px;
+    border: solid black 2px;
 }
 /* from jquery */
 .leagueUsersText{
-    font-size: 20px;
+    font-size: 17px;
     padding-left: 1%;
     padding-top: 1.90%;
 }

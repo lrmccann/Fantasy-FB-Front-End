@@ -9,20 +9,41 @@
 <body>
     <div class="mainContainer">
         <div class="header">
-            <button class="idkidk" id="idkidk">
-                <p>idk</p>
-            </button>
+            <!-- <button class="idkidk" id="idkidk"> -->
+                <!-- <p>idk</p> -->
+            <!-- </button> -->
             <button class="loginBtn" id="loginBtn">
-                <a href="./home.html">
+                <!-- <a href="./home.html"> -->
                 <p class="loginText" id="loginText">Login</p>
-            </a>
+            <!-- </a> -->
             </button>
             <button class="signupBtn" id="signupBtn">
                 <a href="./signup.html">
                 <p class="signupText" id="signupText">Sign Up</p>
             </a>
             </button>
-            
+        </div>
+    </div>
+    <div class="loginModal" id="loginModal">
+        <div class="loginModalHead">
+            <h3 class="modalHeaderText">Please enter your credintials</h3>
+            <button class="closeModalBtn" id="closeModalBtn">
+                <p style="font-size: 20px; color: white;">X</p>
+            </button>
+        </div>
+        <div class="loginModalBody">
+            <form style="margin-top: -12%;">
+                <!-- <h6>Username:</h6> -->
+                <input class="usernameInput" placeholder="Username(8-16)">
+                <!-- <h6>Password:</h6> -->
+                <input class="passwordInput" placeholder="Password(8-16)">
+            </form>
+            <a href="#" class="recoverPassBtn"><p style="font-size: 15px;">Forgot password?</p></a>
+            <button class="loginFromModalBtn" id="loginFromModalBtn">
+                <p style="font-size: 30px; color: whitesmoke;">Login</p>
+            </button>
+        </div>
+        <div class="loginModalFooter">
 
         </div>
     </div>
@@ -36,7 +57,7 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
         </script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="../assets/home.js"></script>
+    <script src="../assets/login.js"></script>
 
 </body>
 

@@ -1,11 +1,10 @@
 .playersPage{
     height: 100%;
     width: 100%;
-    background-color: red;
     overflow-x: hidden;
     overflow-y: scroll;
     background-image: 
-    url("../images/background-image-2.jpg");
+    url("../images/background1.jpg");
     background-size: cover;
 }
 
@@ -14,36 +13,38 @@
     height: 8%;
     width: 102%;
     margin-top: .10%;
-    right: 1%;
     margin-bottom: 3%;
-    /* background-color: whitesmoke; */
     flex-direction: row-reverse;
 }
 
 .dropleft{
-    float: right;
     flex-direction: row-reverse;
+    border: hidden;
+    outline: hidden;
 }
 
 .btn.hamBtn {
-    height: 50;
-    width: 50;
+    height: 55;
+    width: 87;
     background-repeat: no-repeat;
     background-size: cover;
     border: none;
     outline: none;
     background-image: 
-    url("../images/b-ball-for-menu-button.png");
+    url("../images/football-for-menu.png");
     }
 
 .dropdown-menu{
     height: 90%;
-    background-color: none;
+}
+
+#dropdown-menu{
+    background-color: slategray;
 }
 
 .dropdown-list{
     list-style: unset;
-    width: 1350px;
+    width: 1330px;
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
@@ -52,19 +53,13 @@
 
 
 .dropdown-text{
+    margin-top: .1%;
     background-color: slategray;
     font-size: 18;
-    height: 15%;
+    height: 100%;
     outline: none;
     border: none;
 }
-
-/* .menuHeader{
-    height: 6%;
-    width: 90%;
-    background-color: springgreen;
-    margin: auto;
-} */
 
 .playersCont{
     height: 80%;
@@ -82,6 +77,9 @@
     background-color: silver;
     display: flex;
     z-index: 100;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+
 }
 .searchBar{
     height: 50%;
@@ -181,7 +179,9 @@ flex-direction: column;
     margin-top: 6.35%;
     margin-bottom: 5%;
     border: solid black 2px;
-    overflow: scroll;
+    /* overflow-y: scroll; */
+    /* overflow-x: scroll; */
+    /* scroll-behavior: smooth; */
 }
 
 .players{

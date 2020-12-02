@@ -31,7 +31,7 @@
     margin-top: 6%;
 }
 
-.formFields{
+.signupForms{
     display: flex;
     position: absolute;
     flex-direction: column;
@@ -51,7 +51,7 @@
     background-color: inherit;
 }
 
-.continueBtn{
+.createAccountBtn{
     height:50;
     width: 23%;
     background-color: whitesmoke; 
@@ -63,7 +63,7 @@
     align-self: flex-end;
 }
 
-.contBtnText{
+.accountBtnText{
     align-self: center;
     font-size: 18px;
     padding-left: 23%;
