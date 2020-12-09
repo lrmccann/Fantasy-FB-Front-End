@@ -1,26 +1,26 @@
-$(function () {
 
-    const leagueMembers = []
+
+    const allLeagueMembers = []
 
     const getLeagueMembers = async () => {
-        axios.get('https://fantasyapp-4012.herokuapp.com/routes/hello')
-            .then(function (res) {
-                leagueMembers.push(res.data)
-                // if(leagueMembers === undefined){
-                //     getPlayers();
-                // }else{
-                //     // console.log(leagueMembers)
-                //     return leagueMembers 
-                // }
-                return leagueMembers
+        // $(() => {
+            await axios.get('https://fantasyapp-4012.herokuapp.com/routes/getAllUsers')
+            .then(function (allUserResData) {
+                allLeagueMembers.push(allUserResData.data)
+                return allLeagueMembers
             })
+        // })
+
+        // })
     }
     getLeagueMembers()
 
+$(function () {
+
     const setWeeklyRankings = async () => {
         setTimeout(() => {
-            console.log(leagueMembers[0], "set weekly")
-            leagueMembers[0].forEach(item => {
+            console.log(allLeagueMembers[0], "set weekly")
+            allLeagueMembers[0].forEach(item => {
                 if (item.userData.rank === 1) {
                     var goldMedal = "../images/gold_medal.png"
                     var getDiv = document.getElementById('rankCont');
@@ -96,7 +96,7 @@ $(function () {
 
     const appendToLeagueMatchUpDiv = () => {
         setTimeout(() => {
-            leagueMembers[0].forEach(item => {
+            allLeagueMembers[0].forEach(item => {
                 // divs for jquery
                 var getDiv = document.getElementById('leagueMatchesCont')
                 var newDiv = document.createElement('div')
@@ -114,7 +114,6 @@ $(function () {
         event.preventDefault();
         // let isToggled = false;
         $('#dropdown-menu').css('float', 'none');
-        console.log("hello")
         if (isToggled = false) {
             $('#dropdown-menu').hide()
         }

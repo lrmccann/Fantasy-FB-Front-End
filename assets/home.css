@@ -9,8 +9,8 @@
     /* display: flex; */
     /* background-color: #82878C; */
     background-color: transparent;
-    overflow-x: scroll;
-    overflow-y: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
     scroll-behavior: auto;
     /* scrollbar-width: none; */
     background-image: url("../images/background1.jpg");

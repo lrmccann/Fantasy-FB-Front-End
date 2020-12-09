@@ -1,0 +1,79 @@
+.container-fluid.fantasyNewsCont{
+    height: 100%;
+    width: 100%;
+    /* border: solid black 1px; */
+    contain: content;
+    /* margin-top: 10; */
+    /* display: flex; */
+    /* background-color: #82878C; */
+    background-color: transparent;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: auto;
+    /* scrollbar-width: none; */
+    background-image: url("../images/background1.jpg");
+    /* background-image: 
+    url("../images/background-image-2.jpg"); */
+    background-size: cover;
+}
+
+.navBar{
+    display: flex;
+    height: 8%;
+    width: 102%;
+    margin-top: .10%;
+    /* right: 1%; */
+    /* background-color: whitesmoke; */
+    flex-direction: row-reverse;
+}
+
+
+.dropleft{
+    float: right;
+    flex-direction: row-reverse;
+    border: hidden;
+    outline: hidden;
+}
+
+
+.btn.hamBtn {
+    height: 55;
+    width: 87;
+    /* font-size: x-large; */
+    /* margin-top: 18%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    outline: none;
+    /* background-attachment: scroll; */
+    background-image: url("../images/football-for-menu.png");
+    /* background-image: 
+    url("../images/b-ball-for-menu-button.png"); */
+    }
+
+.dropdown-menu{
+    height: 90%;
+}
+#dropdown-menu{
+    background-color: slategrey;
+    }
+
+.dropdown-list{
+    list-style: unset;
+    width: 1330px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    background-color: slategray ;
+}
+
+
+.dropdown-text{
+    margin-top: .1%;
+    /* background-color: whitesmoke; */
+    background-color: slategray;
+    font-size: 18;
+    height: 100%;
+    outline: none;
+    border: none;
+}

@@ -62,13 +62,14 @@
 }
 
 .playersCont{
-    height: 80%;
+    height: 100%;
     width: 100%;
-    background-color: royalblue;
+    /* background-color: royalblue; */
     z-index: 1;
     margin: auto;
     position: relative;
     border: solid black 1.25px;
+    display: flex;
 }
 
 .searchCont{
@@ -76,7 +77,7 @@
     width: 100%;
     background-color: silver;
     display: flex;
-    z-index: 100;
+    z-index: 1;
     overflow-x: scroll;
     scroll-behavior: smooth;
 
@@ -116,9 +117,9 @@ flex-direction: column;
     display: flex;
     flex-direction: column;
 }
-.compPlatersBtn{
-    height: 65%;
-    width: 80%;
+.comparePlayersBtn{
+    height: 55%;
+    width: 60%;
     border-radius: 40px;
 }
 .nflNewsCont{
@@ -205,6 +206,15 @@ flex-direction: column;
     background-color: silver;
 }
 
+.showDetailsBtn{
+    display: flex;
+    flex-direction: row;
+    /* margin-bottom: 1%; */
+    width: 100%;
+    justify-content: space-between;
+    /* background-color: silver; */
+}
+
 .playerImg{
     background-color: gray;
     border-radius: 50px;
@@ -237,4 +247,104 @@ padding-top: 1%;
 .teamText{
     padding-top: 1%;
     /* background-color: yellow; */
+}
+
+.playerDetailsModal{
+    height: 70%;
+    width: 60%;
+    background-color: gray;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    top: 170;
+    margin-left: 20%;
+    border-radius: 15px;
+    visibility: hidden;
+}
+
+.modalHead{
+    height: 16%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* background-color: greenyellow; */
+    border-bottom: solid black 2px;
+}
+
+.closeModalBtn{
+    height: 8%;
+    width: 5%;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    display: flex;
+    right: 7;
+    margin-top: .75%;
+}
+
+.modalBody{
+    height: 65%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* background-color: hotpink; */
+}
+
+.playerIconForModal{
+    height: 75%;
+    width: 7%;
+    background-color: teal;
+    margin-left: 2%;
+    margin-top: 1%;
+    border-radius: 40px;
+}
+
+.playerNameTextForModal{
+    margin-left: 1.75%;
+    margin-top: 2.80%;
+}
+
+.gameDetailsForModal{
+    margin-left: .80%;
+    margin-top: 3.42%;
+}
+
+/* .idk{
+    margin-top: 1.50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+} */
+
+.highlightsBar{
+    height: 12%;
+    width: 100%;
+    /* background-color: slateblue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: solid black 2px;
+}
+
+.makeFlexColumns{
+    display: flex;
+    flex-direction: column;
+}
+
+.btnBar{
+    height: 10%;
+    width: 100%;
+    /* background-color: salmon; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    border-bottom: solid black 2px;
+}
+
+#btnOnBtnBar{
+    background-color: transparent;
+    outline: none;
+    border: none;
 }
