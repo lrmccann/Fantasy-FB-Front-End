@@ -1,8 +1,9 @@
-.playersPage{
+.container-fluid.playersPage{
     height: 100%;
     width: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
+    scroll-behavior: smooth;
     background-image: 
     url("../images/background1.jpg");
     background-size: cover;
@@ -23,15 +24,19 @@
     outline: hidden;
 }
 
-.btn.hamBtn {
+.hamBtn {
     height: 55;
     width: 87;
     background-repeat: no-repeat;
     background-size: cover;
     border: none;
     outline: none;
+    background-color: transparent;
     background-image: 
     url("../images/football-for-menu.png");
+    }
+    .hamBtn:focus{
+        outline: none;
     }
 
 .dropdown-menu{
@@ -39,7 +44,12 @@
 }
 
 #dropdown-menu{
-    background-color: slategray;
+    background-color: dimgrey;
+    /* background-image: url('../images/navbar-image-5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 88%;
+    background-blend-mode: hard-light; */
 }
 
 .dropdown-list{
@@ -48,23 +58,26 @@
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
-    background-color: slategray ;
 }
 
 
 .dropdown-text{
     margin-top: .1%;
-    background-color: slategray;
-    font-size: 18;
+    background-color: transparent;
+    font-size: 20;
+    color: black;
+    font-weight: bolder;
     height: 100%;
     outline: none;
     border: none;
+}
+.dropdown-text:focus{
+    outline: none;
 }
 
 .playersCont{
     height: 100%;
     width: 100%;
-    /* background-color: royalblue; */
     z-index: 1;
     margin: auto;
     position: relative;
@@ -72,104 +85,112 @@
     display: flex;
 }
 
+.makeFlexColumnsOne{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.makeFlexColumnsTwo{
+    display: flex;
+    flex-direction: column;
+}
+
 .searchCont{
     height: 10%;
     width: 100%;
     background-color: silver;
     display: flex;
+    flex-direction: row;
     z-index: 1;
     overflow-x: scroll;
     scroll-behavior: smooth;
 
 }
 .searchBar{
-    height: 50%;
+    height: 100%;
     width: 100%;
+    display: flex;
+}
+.searchBarBtn{
+    margin-top: 1.2% ;
+    height: 60%;
+    width: 4.5%;
+    position: relative;
+    background-color: transparent;
+    color: black;
+    border: none;
+}
+.searchBarBtn:focus{
+    outline: none;
 }
 .searchInput{
-font-size: 18px;
-width: 80%;
-margin-left: 1%;
-margin-top: 1%;
+    height: 75%;
+    width: 80%;
+    margin-top: .65%;
+    margin-left: 1.5%;
+    border-radius: 8px;
+    text-align: center;
+}
+.searchInput:focus{
+    outline: none;
 }
 
 .moreButtons{
     height: 100%;
-    width: 58%;
-    /* background-color: yellow; */
+    width: 38%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    text-align: center;
     padding-left: 1%;
     padding-top: .25%;
-    margin-right: 1%;
-}
-.watchlistCont{
-display: flex;
-flex-direction: column;
+    margin-right: 1.75%;
 }
 .watchlistBtn{
-    height: 100%;
-    width: 100%;
+    height: 70%;
+    width: 84%;
     border-radius: 40px;
 }
-.compPlatersCont{
-    display: flex;
-    flex-direction: column;
+.watchlistBtn:focus{
+    outline: none;
 }
 .comparePlayersBtn{
-    height: 55%;
-    width: 60%;
+    height: 70%;
+    width: 45%;
     border-radius: 40px;
 }
-.nflNewsCont{
-    display: flex;
-    flex-direction: column;
+.comparePlayersBtn:focus{
+    outline: none;
 }
 .nflNewsBtn{
-    height: 65%;
-    width: 100%;
+    height: 70%;
+    width: 75%;
     border-radius: 40px;
 }
-.fantasyNewsCont{
-    display: flex;
-    flex-direction: column;
+.nflNewsBtn:focus{
+    outline: none;
 }
 .fantasyNewsBtn{
-    height: 65%;
-    width: 80%;
+    height: 70%;
+    width: 55%;
     border-radius: 40px;
+}
+.fantasyNewsBtn:focus{
+    outline: none;
 }
 
 .statsBar{
-    height: 6%;
+    height: 120%;
     width: 100%;
     background-color: whitesmoke;
-    position: absolute;
-    margin-top: 4.0001%;
+    position: relative;
+    padding-top: .40%;
     border: solid black 2px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-}
-.rank{
-    display: flex;
-    flex-direction: column;
-}
-
-.points{
-    display: flex;
-    flex-direction: column;
-}
-
-.position{
-    display: flex;
-    flex-direction: column;
-}
-
-.rostered{
-    display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .playersHolder{
@@ -188,16 +209,14 @@ flex-direction: column;
 .players{
     height: 7.5%;
     width: 100%;
-    /* background-color: gray; */
     position: absolute;
     display: flex;
     flex-direction: column;
     margin-top: 1%;
     z-index: 2;
-    /* justify-content: space-evenly; */
 }
 
-.newClass{
+.playerStats{
     display: flex;
     flex-direction: row;
     margin-bottom: 1%;
@@ -209,10 +228,8 @@ flex-direction: column;
 .showDetailsBtn{
     display: flex;
     flex-direction: row;
-    /* margin-bottom: 1%; */
     width: 100%;
     justify-content: space-between;
-    /* background-color: silver; */
 }
 
 .playerImg{
@@ -221,34 +238,12 @@ flex-direction: column;
     border: solid black 1px;
     height: 45px;
     width: 45px;
-
 }
-
-.playerNameText{
-padding-top: 1%;
-/* background-color: blue; */
-}
-
-.avgDraftPosText{
+#paddingTopOnePerc{
     padding-top: 1%;
-    /* background-color: red; */
 }
 
-.byeWeekText{
-    padding-top: 1%;
-    /* background-color: brown; */
-}
-
-.positionText{
-    padding-top: 1%;
-    /* background-color: chartreuse; */
-}
-
-.teamText{
-    padding-top: 1%;
-    /* background-color: yellow; */
-}
-
+/* START MODAL CONTENT */
 .playerDetailsModal{
     height: 70%;
     width: 60%;
@@ -268,7 +263,6 @@ padding-top: 1%;
     width: 100%;
     display: flex;
     flex-direction: row;
-    /* background-color: greenyellow; */
     border-bottom: solid black 2px;
 }
 
@@ -282,13 +276,15 @@ padding-top: 1%;
     right: 7;
     margin-top: .75%;
 }
+.closeModalBtn:focus{
+    outline: none;
+}
 
 .modalBody{
     height: 65%;
     width: 100%;
     display: flex;
     flex-direction: row;
-    /* background-color: hotpink; */
 }
 
 .playerIconForModal{
@@ -309,33 +305,18 @@ padding-top: 1%;
     margin-left: .80%;
     margin-top: 3.42%;
 }
-
-/* .idk{
-    margin-top: 1.50%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 40%;
-} */
-
-.highlightsBar{
+.highlightsBarForModal{
     height: 12%;
     width: 100%;
-    /* background-color: slateblue; */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     border-bottom: solid black 2px;
 }
 
-.makeFlexColumns{
-    display: flex;
-    flex-direction: column;
-}
-
-.btnBar{
+.btnBarForModal{
     height: 10%;
     width: 100%;
-    /* background-color: salmon; */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -348,3 +329,4 @@ padding-top: 1%;
     outline: none;
     border: none;
 }
+/* END MODAL CONTENT */

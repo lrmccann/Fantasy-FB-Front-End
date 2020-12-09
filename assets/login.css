@@ -1,13 +1,14 @@
-.mainContainer{
+.loginContainer{
     height: 100%;
     width: 100%;
-    /* background-color: lawngreen; */
-    background-color: whitesmoke;
-    /* background-image: url("../images/login-background-img.png");
-    background-size: cover;
-    background-position: center; */
     display: flex;
-    /* flex-direction: row; */
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-image: url('../images/login-bg-3.jpg');
+    background-size: contain;
+    background-position: left;
+    background-position: -17%;
+    z-index: 99;
 }
 
 .header{
@@ -24,12 +25,16 @@ border-radius: 50px;
 height: 75%;
 width: 10%;
 background-color: whitesmoke;
-/* border: solid black .25%; */
 border: none;
 outline: none;
 }
 
-.signupText{   
+.signupBtn:focus{
+    outline: none;
+    outline-style: none;
+}
+
+.signupBtnText{   
 padding: 7;
 }
 
@@ -41,11 +46,13 @@ border-radius: 50px;
 height: 75%;
 width: 10%;
 border: none;
-outline: none;
 background-color: whitesmoke;
 }
+.loginBtn:focus{
+    outline: none;
+}
 
-.loginText{
+.loginBtnText{
 padding: 7;
 }
 
@@ -53,16 +60,15 @@ padding: 7;
     visibility: hidden;
     display: flex;
     flex-direction: row;
-    height: 70%;
-    width: 40%;
-    background-color: whitesmoke;
-    border: solid black 1px;
-    position: absolute;
-    left: 465;
-    top: 180;
-    background-image: url("../images//modal-background1.jpg");
-    background-size: auto;
-    background-blend-mode: darken;
+    height: 60%;
+    width: 45%;
+    /* background-color: whitesmoke; */
+    border: solid black 2px;
+    position: fixed;
+    justify-self: center;
+    left: 425;
+    top: 130;
+    border-radius: 40px;
 }
 
 .loginModalHead{
@@ -72,6 +78,8 @@ padding: 7;
     height: 15%;
     width: 100%;
     background-color: rgb(185, 20, 20);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
 
 .modalHeaderText{
@@ -84,79 +92,81 @@ color: whitesmoke;
 .closeModalBtn{
     height: 82%;
     width: 7%;
-    background-color: rgb(185, 20, 20);
+    background-color: transparent;
     border: none;
     margin-top: 1.5%;
     margin-right: 1%;
+}
+.closeModalBtn:focus{
+    outline: none;
 }
 
 .loginModalBody{
     display: flex;
     flex-direction: column;
-    height: 92%;
+    height: 100%;
     width: 100%;
     background-color: whitesmoke;
     justify-content: center;
     align-items: center;
-    /* position: relative; */
+    padding-right: 18%;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
-.loginFromModalBtn{
+.validateUserBtn{
     position: absolute;
     height: 15%;
     width: 45%;
     border-radius: 70px;
-    /* align-self: flex-end; */
     margin-top: 65%;
-    /* bottom: 50; */
     text-align: center;
     padding-top: .65%;
     margin-bottom: 12%;
-    background-color: blue;
+    background-color: rgb(32, 92, 172);
     border: none;
+    margin-left: 17.5%;
+}
+.validateUserBtn:focus{
+    outline: none;
 }
 
 .usernameInput{
     position: relative;
     height: 55%;
-    width: 100%;
-    margin-bottom: 9%;
-    /* margin-top: 10%; */
+    width: 135%;
+    margin-bottom: 14%;
     text-align: center;
-    /* border-radius: 8px; */
     border-top: none;
     border-right: none;
     border-left: none;
-    background-color: whitesmoke;
+    background-color: transparent;
+    font-size: 18px;
+    outline-style: none;
 }
 
 .passwordInput{
-    position: relative;
     height: 55%;
-    width: 100%;
-    /* margin-top: 5%; */
+    width: 135%;
     text-align: center;
-    /* border-radius: 8px; */
     border-top: none;
     border-right: none;
     border-left: none;
-    background-color: whitesmoke;
+    background-color: transparent;
+    font-size: 18px;
+    outline-style: none;
 }
 
 .recoverPassBtn{
     position: absolute;
     align-self: flex-end;
-    bottom: 180;
-    right: 95;
+    bottom: 88;
+    right: 65;
+    background-color: transparent;
+    border: none;
+    color: blue;
 }
-
-.loginModalFooter{
-    display: flex;
-    /* justify-self: flex-end; */
-    align-self: flex-end;
-    flex-direction: row;
-    height: 10%;
-    width: 100%;
-    /* background-color: blue; */
-    background-color: whitesmoke;
-    position: absolute;
+.recoverPassBtn:focus{
+    outline: none;
 }

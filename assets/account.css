@@ -3,12 +3,6 @@
     width: 100%;
     contain: content;
     background-color: transparent;
-
-    /* overflow-x: none;
-    overflow-y: scroll; */
-    /* scroll-behavior: auto; */
-
-    /* background-color: hotpink; */
     background-image: url("../images/background1.jpg");
     background-size: cover;
 }
@@ -18,33 +12,29 @@
     height: 8%;
     width: 102%;
     margin-top: .10%;
-    /* right: 1%; */
-    /* background-color: whitesmoke; */
     flex-direction: row-reverse;
 }
-
 
 .dropleft{
     float: right;
     flex-direction: row-reverse;
-    border: hidden;
-    outline: hidden;
 }
 
-
-.btn.hamBtn {
+.hamBtn {
     height: 55;
     width: 87;
-    /* font-size: x-large; */
-    /* margin-top: 18%; */
     background-repeat: no-repeat;
     background-size: cover;
     border: none;
-    outline: none;
-    /* background-attachment: scroll; */
     background-image: url("../images/football-for-menu.png");
-    /* background-image: 
-    url("../images/b-ball-for-menu-button.png"); */
+    background-color: transparent;
+}
+
+.hamBtn:focus{
+    outline: none;
+    border: none;
+    outline-style: none;
+    outline-width: 0;
 }
 
 .dropdown-menu{
@@ -64,15 +54,15 @@
     background-color: slategray ;
 }
 
-
 .dropdown-text{
     margin-top: .1%;
-    /* background-color: whitesmoke; */
     background-color: slategray;
     font-size: 18;
     height: 100%;
-    outline: none;
     border: none;
+}
+.dropdown-text:focus{
+    outline: none;
 }
 
 .userDataCont{

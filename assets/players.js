@@ -11,8 +11,8 @@
 //                 // console.log(myKey, " i am the keeeey")
 //                 var getDiv = document.getElementById('players');
 //                 var newDiv = document.createElement('div')
-//                 var randomShit = `<div class="newClass"><button id=${index.PlayerID} class="showDetailsBtn"><img src="${index.PhotoUrl}" class="playerImg" /><p class="playerNameText">${index.Name}</p><p class="avgDraftPosText">${index.AverageDraftPosition}</p>
-//             <p class="byeWeekText">${index.ByeWeek}</p><p class="positionText">${index.Position}</><p class="teamText">${index.Team}</p></button></div>`
+//                 var randomShit = `<div class="playerStats"><button id=${index.PlayerID} class="showDetailsBtn"><img src="${index.PhotoUrl}" class="playerImg" /><p id="paddingTopOnePerc">${index.Name}</p><p id="paddingTopOnePerc">${index.AverageDraftPosition}</p>
+//             <p id="paddingTopOnePerc">${index.ByeWeek}</p><p id="paddingTopOnePerc">${index.Position}</><p id="paddingTopOnePerc">${index.Team}</p></button></div>`
 //                 newDiv.innerHTML = randomShit
 //                 getDiv.appendChild(newDiv)
 //                 $('.showDetailsBtn').click(function (event) {
@@ -67,9 +67,9 @@
 
 //                 console.log(index)
 //                 $('.playerDetailsModal').css('visibility', 'visible')
-//                 var getDiv2 = document.getElementById('highlightsBar');
+//                 var getDiv2 = document.getElementById('highlightsBarForModal');
 //                 var getDivID = document.createElement('div');
-//                 getDivID.setAttribute('class', 'makeFlexColumns')
+//                 getDivID.setAttribute('class', 'makeFlexColumnsTwo')
 //                 // getDivID.innerHTML = `<p>${index.FantasyPosition}</p><p>Fantasy Points</p>`
 //                 getDivID.innerHTML = `<p>${index.AverageDraftPosition}</p><p>Season Rank </p>`
 //                 // getDivID.innerHTML = index.AverageDraftPosition
@@ -96,9 +96,9 @@
 //                 // getDiv.appendChild(playerNameText)
 //                 // getDiv.append(gameDetails)
 
-//                 // var getDiv2 = document.getElementById('highlightsBar');
+//                 // var getDiv2 = document.getElementById('highlightsBarForModal');
 //                 // var getDivID = document.createElement('div');
-//                 // getDivID.setAttribute('class' , 'makeFlexColumns')
+//                 // getDivID.setAttribute('class' , 'makeFlexColumnsTwo')
 //                 // getDivID.innerHTML = `<p>${index.FantasyPosition}</p><p>Fantasy Points</p>`
 //                 // getDivID.innerHTML = `<p>${index.AverageDraftPosition}</p><p>Season Rank </p>`
 //                 // // getDivID.innerHTML = index.AverageDraftPosition
@@ -110,7 +110,8 @@
 
 // }
 
-$('.watchlistCont').click(function(){
+// BUTTONS IN SEARCH CONTAINER
+$('.watchlistBtn').click(function(){
     window.location.replace('file:///Users/logan/Desktop/Fantasy-FB/front-end/screens/watchList.html?')
 })
 
@@ -125,3 +126,11 @@ $('.nflNewsBtn').click(function(){
 $('.fantasyNewsBtn').click(function(){
     window.location.replace('file:///Users/logan/Desktop/Fantasy-FB/front-end/screens/fantasyNews.html?')
 })
+// END BUTTONS IN SEARCH CONTAINER
+
+// SEARCH BAR BUTTON AND ENTER BUTTON FOR SEARCH BAR
+$('.searchBarBtn').click(function(){
+    
+})
+
+// END SEARCH BAR BUTTON AND ENTER BUTTON FOR SEARCH BAR

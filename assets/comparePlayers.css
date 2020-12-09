@@ -5,15 +5,11 @@
     contain: content;
     /* margin-top: 10; */
     /* display: flex; */
-    /* background-color: #82878C; */
     background-color: transparent;
     overflow-x: hidden;
     overflow-y: scroll;
     scroll-behavior: auto;
-    /* scrollbar-width: none; */
     background-image: url("../images/background1.jpg");
-    /* background-image: 
-    url("../images/background-image-2.jpg"); */
     background-size: cover;
 }
 
@@ -22,11 +18,8 @@
     height: 8%;
     width: 102%;
     margin-top: .10%;
-    /* right: 1%; */
-    /* background-color: whitesmoke; */
     flex-direction: row-reverse;
 }
-
 
 .dropleft{
     float: right;
@@ -35,20 +28,18 @@
     outline: hidden;
 }
 
-
-.btn.hamBtn {
+.hamBtn {
     height: 55;
     width: 87;
-    /* font-size: x-large; */
-    /* margin-top: 18%; */
     background-repeat: no-repeat;
     background-size: cover;
     border: none;
     outline: none;
-    /* background-attachment: scroll; */
+    background-color: transparent;
     background-image: url("../images/football-for-menu.png");
-    /* background-image: 
-    url("../images/b-ball-for-menu-button.png"); */
+    }
+    .hamBtn:focus{
+        outline: none;
     }
 
 .dropdown-menu{
@@ -67,13 +58,14 @@
     background-color: slategray ;
 }
 
-
 .dropdown-text{
     margin-top: .1%;
-    /* background-color: whitesmoke; */
     background-color: slategray;
     font-size: 18;
     height: 100%;
     outline: none;
     border: none;
+}
+.dropdown-text:focus{
+    outline: none;
 }

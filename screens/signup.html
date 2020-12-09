@@ -8,43 +8,34 @@
 <body>
     <div class="container-fluid mainCont">
         <div class="leftCont">
-            <h2>Where fantasy meets football</h2>
-            
+            <!-- <h2>Where fantasy meets football</h2> -->
         </div>
         <div class="rightCont">
             <h1>You're just a few click away from managing your own team!</h1>
             <div class="formContent">
             <form class="signupForms">
-                <h3>Username</h3>
-                <input class="inputField" id="userName">
-                <h3>Team name</h3>
-                <input class="inputField" id="teamName">
-                <h3>Email</h3>
-                <input class="inputField" id="email">
-                <h3>Password</h3>
-                <input class="inputField" id="password">
-                <h3>Confirm Password</h3>
-                <input class="inputField" id="confirmPassword">
-                <h3>City</h3>
-                <input class="inputField" id="city">
-                <h3>Zip Code</h3>
-                <input class="inputField" id="zipCode">
-                <h3>Age</h3>
-                <input class="inputField" id="age">
-                <h3>Favorite Team</h3>
-                <input class="inputField" id="favoriteTeam">
-                <h3>Additional Info</h3>
-                <input class="inputField" id="additionalInfo">
+                <input class="inputField" id="userName" placeholder="Enter Username (8-16 characters)">
+                <input class="inputField" id="teamName" placeholder="Choose A Team Name (Be Somewhat Appropriate)">
+                <input class="inputField" id="email" placeholder="Enter Email (Must Be Valid)">
+                <input class="inputField" id="password" placeholder="Enter Password (8-16 characters)">
+                <input class="inputField" id="confirmPassword" placeholder="Re-Enter Password">
+                <input class="inputField" id="city" placeholder="Enter Your Current City">
+                <input class="inputField" id="zipCode" placeholder="Enter Your Current Zipcode">
+                <input class="inputField" id="age" placeholder="Verify Age">
+                <input class="inputField" id="favoriteTeam" placeholder="Choose Favorite Team">
+                <input class="inputField" id="additionalInfo" placeholder="Enter Any Additional Information Here">
+
+
+                <button id="testBtn" class="testBtn" style="height: 30%; width: 30%; background-color: chartreuse; position: absolute;">test with me</button>
+                <input id="file_input" class="file_input" type="image" name="name" style="display: none;">
+
                 <button class="createAccountBtn">
-                    <p class="acountBtnText">Create Account</p>
+                    <p class="accountBtnText">Create Account</p>
                 </button>
             </form>
         </div>
 
         </div>
-        <!-- <div class="interiorCont"> -->
-        <!-- </div> -->
-
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
@@ -52,7 +43,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
         </script>
-                <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="../assets/signup.js"></script>
 </body>
 

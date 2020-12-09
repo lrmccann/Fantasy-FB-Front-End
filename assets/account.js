@@ -41,7 +41,7 @@ var currentUser = {}
 
 $(async () => {
     console.log(getUsernameFromLocalStorage)
-    await axios.get(`https://fantasyapp-4012.herokuapp.com/routes/getSingleUser/${userNameFromLocalStorage}`)
+    await axios.get(`https://fantasyapp-4012.herokuapp.com/routes/getSingleUser/${getUsernameFromLocalStorage}`)
         .then(function (currentUserDetails) {
             console.log(currentUserDetails.data)
             currentUser = currentUserDetails.data
