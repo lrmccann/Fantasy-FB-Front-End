@@ -32,6 +32,7 @@ $(function () {
                     return true;
             }
         }
+        console.log(Date)
         const validEmailRegex = RegExp(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i);
         const userName = $("#userName").val();
         const teamName = $("#teamName").val();

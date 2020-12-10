@@ -28,8 +28,10 @@ $(function () {
                     const result = res.data
                     const newSessionToken = await res.data.sessionToken
                     const userNameToLocalStor = await res.data.userName
+                    const teamNameToLocalStor = await res.data.teamName
                     localStorage.setItem('sessionToken', newSessionToken)
                     localStorage.setItem('userName', userNameToLocalStor)
+                    localStorage.setItem('teamName' , teamNameToLocalStor)
                     if (result === 403) {
                         alert('Wrong username')
                     } else if (result === 404) {

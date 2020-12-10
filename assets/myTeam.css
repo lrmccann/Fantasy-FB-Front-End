@@ -69,3 +69,167 @@
 .dropdown-text:focus{
     outline: none;
 }
+
+.teamContainer{
+    height: 100%;
+    width: 100%;
+    margin-top: 2%;
+    background-color: gray;
+    margin-bottom: 5%;
+    overflow: scroll;
+}
+
+.teamContainerHeader{
+    height: 10%;
+    width: 97.91%;
+    background-color: rgb(147, 152, 158);
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    border-bottom: solid whitesmoke 2px;
+    /* left: 1%; */
+}
+.teamContHeaderText{
+    text-align: left;
+    padding-top: 1%;
+    margin-left: 1%;
+    position: relative;
+}
+
+.winLossRankingText{
+    position: absolute;
+    left:23%;
+    margin-top: 1.60%;
+}
+
+.totalFantasyPtsText{
+    position: absolute;
+    left: 32%;
+    margin-top: 1.60%;
+}
+
+.rosterBtn{
+height: 7%;
+width: 8%;
+position: absolute;
+left: 77%;
+margin-top: .75%;
+background-color: transparent;
+border: none;
+}
+
+.rosterBtnText{
+    font-size: 18px;
+    margin-top: 10%;
+    border-bottom: solid black 2px;
+    padding-bottom: 3%;
+}
+
+.playerUpdatesBtn{
+    height: 7%;
+    width: 10%;
+    position: absolute;
+    left: 86%;
+    background-color: transparent;
+    border: none;
+    margin-top: .75%;
+}
+
+.playerUpdatesBtnText{
+    font-size: 18px;
+    margin-top: 8%;
+    /* border-bottom: solid black 2px; */
+    padding-bottom: 3%;
+}
+
+.fullTeamDiv{
+    height: 100%;
+    width: 100%;
+    margin-top: 5.10%;
+}
+
+#playersOnTeam{
+    height: 8%;
+    width: 100%;
+    background-color: gray;
+    margin-top: .25%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid white 1px;
+}
+
+.playerPosition{
+    /* height: 80%; */
+    /* width: 3.50%; */
+    height: 65%;
+    width: 2.90%;
+    /* background-color: white; */
+    background-color: transparent;
+    border-radius: 75%;
+    margin-left: .40%;
+    /* margin-top: .38%; */
+    margin-top: .75%;
+    border: solid whitesmoke 2px;
+}
+
+.playerPositionText{
+    font-size: 15px;
+    /* padding-left: 23%;
+    padding-top: 18%; */
+    padding-left: 21%;
+    padding-top: 13%;
+    color: whitesmoke;
+}
+
+.playerPhotoDiv{
+    height: 100%;
+    width: 5.50%;
+    margin-left: 1.50%;
+    background-color: silver;
+}
+
+.playerPhotoImg{
+    background-color: black;
+    size: auto;
+}
+
+#makeFlexColumn{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    margin-left: 2.25%;
+}
+.playerShortNameText{
+    font-size: 22px;
+    color: whitesmoke;
+}
+
+.playerTeamText{
+    font-size: 12px;
+    margin-top: -12%;
+    color: whitesmoke;
+    padding-left: 6%;
+}
+
+.upcomingGameText{
+    margin-top: 1%;
+    color: whitesmoke;
+}
+
+.weekDraftedText{
+    color: whitesmoke;
+    margin-top: 1%;
+    margin-left: 8%;
+}
+
+.pointsLastWeekText{
+    color: whitesmoke;
+    margin-top: 1%;
+    margin-left: 8%;
+}
+
+.projectedPointsText{
+    color: whitesmoke;
+    margin-top: 1%;
+    margin-left: 8%;
+}

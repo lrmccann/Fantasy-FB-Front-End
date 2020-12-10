@@ -14,6 +14,6 @@ $(function () {
     })
     $('#signOutBtn').click(function(){
         window.location.replace('file:///Users/logan/Desktop/Fantasy-FB/front-end/screens/login.html?')
+        localStorage.clear('userName' , 'sessionToken')
     })
-
 })
