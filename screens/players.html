@@ -21,64 +21,43 @@
                 <!-- Dropdown menu links -->
                 <div id="dropdown-menu" class="dropdown-menu">
                     <ul class="dropdown-list">
-                        <button id="homeBtn" class="dropdown-text"><p>Home</p></button>
-                        <button id="teamBtn" class="dropdown-text"><p>My Team</p></button>
-                        <button id="playersBtn" class="dropdown-text"><p>Players</p></button>
-                        <button id="accountBtn" class="dropdown-text"><p>Account</p></button>
-                        <button id="signOutBtn" class="dropdown-text"><p>Sign Out</p></button>
+                        <button id="homeBtn" class="dropdown-text">
+                            <p>Home</p>
+                        </button>
+                        <button id="teamBtn" class="dropdown-text">
+                            <p>My Team</p>
+                        </button>
+                        <button id="playersBtn" class="dropdown-text">
+                            <p>Players</p>
+                        </button>
+                        <button id="accountBtn" class="dropdown-text">
+                            <p>Account</p>
+                        </button>
+                        <button id="signOutBtn" class="dropdown-text">
+                            <p>Sign Out</p>
+                        </button>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="playersCont">
+        <div class="playersCont" id="playersCont">
             <div class="playerDetailsModal" id="playerDetailsModal">
                 <div class="modalHead" id="modalHead">
-                    <button class="closeModalBtn" id="closeModalBtn">
-                        <p style="font-size: 23px; color: black;">X</p>
-                    </button>
-                    <!-- <img class="playerIconForModal" >
-                    <h3 class="playerNameTextForModal">Player Name</h3>
-                    <p class="gameDetailsForModal">game details</p> -->
                 </div>
-                <div class="highlightsBarForModal" id="highlightsBarForModal">
-                    <!-- <div id="makeFlexColumnsTwo">
-                        <p>###.##</p>
-                        <p>Fan Points</p>
-                    </div>
-                    <div id="makeFlexColumnsTwo">
-                        <p>#</p>
-                        <p>Season Rank</p>
-                    </div> -->
-                    <div id="makeFlexColumnsTwo">
-                        <p>##% Rostered</p>
-                        <p>(+#% Last Week)</p>
-                    </div>
-
-                </div>
-                <div class="btnBarForModal">
-                    <button class="overviewBtn" id="btnOnBtnBar">
-                        <h6>Overview</h6>
-                    </button>
-                    <button class="gameLogsBtn" id="btnOnBtnBar">
-                        <h6>Game Log</h6>
-                    </button>
-                    <button class="statsBtn" id="btnOnBtnBar">
-                        <h6>Stats</h6>
-                    </button>
+                <div class="highlightsBarForModal" id="highlightsBar">
                 </div>
                 <div class="modalBody">
-
                 </div>
             </div>
             <div class="makeFlexColumnsOne">
                 <div class="searchCont">
                     <form class="searchBar">
                         <input class="searchInput" type="text" placeholder="Search Players, Teams, Stats"
-                          aria-label="Search">
-                          <button class="searchBarBtn">
-                        <i class="fas fa-search" aria-hidden="true"></i>
-                    </button>
-                      </form>
+                            aria-label="Search">
+                        <button class="searchBarBtn">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </button>
+                    </form>
                     <div class="moreButtons">
                         <div id="makeFlexColumnsTwo">
                             <button class="watchlistBtn"><i class="far fa-star"></i></button>
@@ -99,10 +78,12 @@
                     </div>
                 </div>
                 <div class="statsBar">
-                    <h6 id="makeFlexColumnsTwo">Avg Draft Rank</h6>
-                    <h6 id="makeFlexColumnsTwo">Proj Points</h6>
-                    <h6 id="makeFlexColumnsTwo">Position</h6>
-                    <h6 id="makeFlexColumnsTwo">% Rostered</h6>
+                    <h6 style="margin-left: -2%;" >Name</h6>
+                    <h6 id="makeFlexColumnsThree">Team</h6>
+                    <h6 id="makeFlexColumnsThree">Position</h6>
+                    <h6 id="makeFlexColumnsThree">Prev FP's</h6>
+                    <h6 id="makeFlexColumnsThree">Proj FP's</h6>
+                    <h6 id="makeFlexColumnsThree" style="margin-right: -3%;">Bye Week</h6>
                 </div>
             </div>
             <div class="playersHolder" id="playersHolder">

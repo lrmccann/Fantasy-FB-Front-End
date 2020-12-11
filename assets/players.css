@@ -90,6 +90,12 @@
     display: flex;
     flex-direction: column;
 }
+#makeFlexColumnsThree{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 1%;
+}
 
 .searchCont{
     height: 10%;
@@ -184,7 +190,7 @@
     border: solid black 2px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
 }
 
 .playersHolder{
@@ -236,15 +242,15 @@
 
 /* START MODAL CONTENT */
 .playerDetailsModal{
-    height: 70%;
-    width: 60%;
+    height: 90%;
+    width: 50%;
     background-color: gray;
     position: fixed;
     z-index: 100;
     display: flex;
     flex-direction: column;
-    top: 170;
-    margin-left: 20%;
+    top: 50;
+    margin-left: 25%;
     border-radius: 15px;
     visibility: hidden;
 }
@@ -257,9 +263,9 @@
     border-bottom: solid black 2px;
 }
 
-.closeModalBtn{
+.closeModalCont{
     height: 8%;
-    width: 5%;
+    width: 8%;
     background-color: transparent;
     border: none;
     position: absolute;
@@ -267,6 +273,20 @@
     right: 7;
     margin-top: .75%;
 }
+
+.closeModalBtn{
+    height: 80%;
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+
+.closeModalText{
+font-size: 19px;
+color: whitesmoke;
+}
+
 .closeModalBtn:focus{
     outline: none;
 }
@@ -280,11 +300,12 @@
 
 .playerIconForModal{
     height: 75%;
-    width: 7%;
+    width: 9.75%;
     background-color: teal;
     margin-left: 2%;
     margin-top: 1%;
     border-radius: 40px;
+    margin-right: .50%;
 }
 
 .playerNameTextForModal{
@@ -294,10 +315,10 @@
 
 .gameDetailsForModal{
     margin-left: .80%;
-    margin-top: 3.42%;
+    margin-top: 3.65%;
 }
 .highlightsBarForModal{
-    height: 12%;
+    height: 9%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -305,8 +326,12 @@
     border-bottom: solid black 2px;
 }
 
+#highlightsBarText{
+    margin-top: 1%;
+}
+
 .btnBarForModal{
-    height: 10%;
+    height: 8%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -319,5 +344,147 @@
     background-color: transparent;
     outline: none;
     border: none;
+    margin-top: .50%;
 }
+
+.upcomingOponnentRank{
+    margin-left: .10%;
+    margin-top: 3.65%;
+}
+
+.overViewCont{
+    background-color: transparent;
+    text-align: center;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 4%;
+    overflow-x: none;
+    overflow-y: scroll;
+}
+
+.articleHeader{
+    color: whitesmoke;
+}
+
+.articleBody{
+    color: whitesmoke;
+}
+
+
+/* START MODAL TAB BAR  */
+.modalTabBar{
+    height: 9%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-top: solid black 2px;
+    background-color: gray;
+    position: absolute;
+    top: 91%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.addPlayerToRosterBtnTabBar{
+    height: 100%;
+    width: 25%;
+    /* background-color: turquoise; */
+    background-color: transparent;
+    border: none;
+}
+.addPlayerToRosterBtnTabBar:focus{
+    outline: none;
+}
+
+.addPlayerBtnIconTabBar{
+    height: 60%;
+    width: 25%;
+    border-radius: 50px;
+    margin-top: 1.10%;
+    background-color: orange;
+}
+
+.addPlayerTabBarText{
+    font-size: 12px;
+
+}
+
+.comparePlayersBtnTabBar{
+    height: 100%;
+    width: 25%;
+    /* background-color: skyblue; */
+    background-color: transparent;
+    border: none;
+}
+
+.comparePlayersBtnTabBar:focus{
+    outline: none;
+}
+
+.comparePlayerBtnIconTabBar{
+    height: 60%;
+    width: 25%;
+    border-radius: 50px;
+    margin-top: 1.10%;
+    background-color: red;
+}
+
+.comparePlayerTabBarText{
+    font-size: 12px;
+}
+
+.addPlayerToWatchListBtnTabBar{
+    height: 100%;
+    width: 25%;
+    /* background-color: saddlebrown; */
+    background-color: transparent;
+    border: none;
+}
+
+.addPlayerToWatchListBtnTabBar:focus{
+    outline: none;
+}
+
+
+.addPlayerToWatchListIconTabBar{
+    height: 60%;
+    width: 25%;
+    border-radius: 50px;
+    margin-top: 1.10%;
+    background-color: greenyellow;
+}
+
+.addPlayerToWatchListTabBarText{
+    font-size: 12px;
+}
+
+.discussPlayerBtnTabBar{
+    height: 100%;
+    width: 25%;
+    /* background-color: olive; */
+    background-color: transparent;
+    border: none;
+}
+
+.discussPlayerBtnTabBar:focus{
+    outline: none;
+}
+
+
+.discussPlayerIconTabBar{
+    height: 60%;
+    width: 25%;
+    border-radius: 50px;
+    margin-top: 1.10%;
+    background-color: whitesmoke;
+}
+
+.discussPlayerTabBarText{
+    font-size: 12px;
+}
+
+/* END MODAL TAB BAR  */
+
+
 /* END MODAL CONTENT */
