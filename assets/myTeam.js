@@ -1,3 +1,4 @@
+// appends users custom team name to container
 $(()=>{
     const userNameFromLS = localStorage.getItem('teamName');
     var getDiv = document.getElementById('teamContainerHeader');
@@ -6,3 +7,4 @@ $(()=>{
     createTextEl.innerHTML = `${userNameFromLS}`;
     getDiv.appendChild(createTextEl)
 })
+
